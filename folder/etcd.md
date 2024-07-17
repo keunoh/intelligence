@@ -1,0 +1,14 @@
+- CNCF(Cloud Native Computing Foundation) project
+- etcd is a distributed key-value store that provides a reliable way to store data across a cluster of machines.
+- It's at the heart of Kubernetes, storing all key data required to managee the state of the cluster
+- Key aspects
+  - Distributed Key-Value Store: It is designed to safely store critical data and provide high availability with strong consistency For Kubernetes, it holds the most critical and stateful data of the Kuberenetes cluster, such as configuration data, state of different workloads, and metadata
+- continue
+  - Cluster State Management: In Kubernetes, etcd is used to store all the data representing the state of the cluster. This incluedes the configuration of the cluster, the state of workloads, network settings, and other cluster management information
+  - Consistency and High Availability: etcd is a strongly consistent and highly available database, which means that it ensures that the data is the same across all the nodes in the cluster at any given time
+  - Leader Election and Quorum: It ensures that the data remains consistent and available even if some of the nodes fail
+  - API Server Interaction: In Kubernetes, the API server interacts with etcd to read and write data
+- continue
+  - Watch Mechanism: etcd provides a watch mechanism that allows Kubernetes to be notified of any changes to its data.
+  - Backup and Recovery: Since etcd holds eseential data, it's important to regularly back up its data.  
+   
