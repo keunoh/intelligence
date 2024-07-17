@@ -1,0 +1,5 @@
+- A scheduler watches for newly created Pods that have no Node assgined.
+- BUT Kubelet is the one that create the pod.
+- The scheduler only decides which pod goes to which node
+1. Filter Nodes
+2. Scorgin Nodes
