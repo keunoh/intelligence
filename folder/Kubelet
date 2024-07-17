@@ -1,0 +1,5 @@
+The kubelet is the primary Node agent that runs on each node
+- Register the node with API server
+- Pods creation
+- Monitor nodes and pods
+Kubelet, PodSpecs, Worker Node
