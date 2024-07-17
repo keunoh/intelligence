@@ -1,0 +1,8 @@
+- The API server is the central management entity and the only component that directly communicates with etcd
+- Always use API server to read or write to etcd
+- User authentication
+- Request validation
+- API Server Reads from etcd
+- Writing to etcd & return the status
+- Watching Changes(Scheduler or Control manager via Kube API server)
+- Ask to Kubelet to the desired state & API server will write to etcd
