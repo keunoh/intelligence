@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app.kubernetes.io/name: proxy
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+      name: http-web-svc
+  - name: busy-box
+    image: busybox:latest
+
+● apiVersion: a version identifier that is used to specify the version of the Kubernetes API 
+              that is being used for a particular object definition
+            ○ Allow users and application to interact with a k8s cluster, including creating,
+              updating, and eleting resources
+● v1, apps/v1(Deployment and Replicaset) and batch/v1 for Job object
+● different Kubernetes API versions may have different features, fields, and behavior
+● Pod - the smallest and simplest Kubernetes object, representing a single instance of a running
+        process in a cluster.
+● Deployment - a higher-level object that manages a set of replicas of a pod and provides features
+               such as rolling updates and rollbacks.
+● Service - an abstraction layer that provides a stable IP address and DNS name for a set of pods,
+            allowing them to be accessed by other pods or external clients.
+● ConfigMap - a way to store configuration data as key-value pairs that can be accessed by pods or
+              other objects in a Kubernetes cluster.
+● Secret - similar to ConfigMap, but used for sensitive data such as passwords or API keys,
+           and stored in an encrypted format.
+● PersistentVolume - a way to represent a physical disk or other storage device that can be used by
+                     a pod or other object in a Kubernetes cluster.
+● StatefulSet - a higher-level object that manages a set of pods, each with a unique identity and stable
+                network identity, typically used for stateful applications such as databases.
+● Job - a Kubernetes object that runs a single task to completion, often used for batch processing or periodic tasks.
+● Metadata name
+  ○ key-value pairs to Kubernetes objects
+  ○ it is optional and can be used to identify and organize objects based on
+    specific attributes or characteristic
+  ○ use for group or filter
+  ○ e.g. environment: production
+● It refers to the specification or configuration of a Kubernetes object
+● This can include a variety of configuration options depending on the type of
+  Kubernetes object being defined
+● For example,
+  ○ Pod object includes options for specifying the container images,
+    commands, and ports to use
+  ○ Service object includes options for defining how the service should
+    route traffic to pods.
+
