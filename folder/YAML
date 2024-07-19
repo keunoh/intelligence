@@ -1,0 +1,46 @@
+https://yaml.org/
+YAML(short for "YAML Ain't Markup Language") is a human-readable data serialization format.
+It's often used for configuration files, data exchange, and other applications where data
+needs to be represented in a structured way.
+YAML is designed to be easy to read and write, even by non-technical users,
+and to work well with a variety of programming languages.
+
+YAML SYNTAX
+The basic structure of YAML is based on the use of indentation to indicate structure.
+This means that each level of structure is indented by a fixed number of spaces (usually 2 or 4).
+Here's an example of a YAML file that represents a simple shopping list:
+
+- Milk     the hyphen symbol(-) is used to indicate a list item
+- Bread
+- Eggs
+
+name: John Smith
+age: 35
+isMarried: true
+favoriteFoods:
+  - Pizza
+  - Tacos
+  - Sushi
+birthdate: 1987-05-12
+
+the colon symbol (:) is used to seperate the key (the name of the data item)
+from the value (the data itself). The data types include a string (name), a number (age),
+a boolean (isMarried), a list (favoriteFoods), and a date (birthdate)
+
+# dictionary                {
+person:                        "person": {
+  # k/v: string                  "name": "John Smith",
+  name: John Smith               "age": 35,
+  # k/v: number                  "isMarried": true,
+  age: 35                        "favoriteFoods":  [
+  # k/v: boolean                   "Pizza",
+  isMarried: true                  "Tacos",
+                        ->         "Sushi"
+  # nested dictionary            ],
+  favoriteFoods:                 "birthdate": "1987-05-12"
+    # list                     }
+    - Pizza                  }
+    - Tacos
+    - Sushi
+  # date birthday
+  birthdate: 1987-05-12
