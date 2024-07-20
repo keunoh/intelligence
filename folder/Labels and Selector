@@ -1,0 +1,9 @@
+● Labels and selectors are mechanisms used for identifying and grouping resources, such as pods, services,
+  and nodes, based on user-defined key-value pairs
+  ○ Labels are key-value paris attached to resources
+  ○ Selectors are used to filter and select resources based on their labels
+● Annotations are metadata that you can attach to resources such as pods, services, nodes,
+  or any other Kubernetes objects
+● It is intended for additional data or information that provides context, documentation,
+  or other auxiliary details about the resource
+● It is typically not used for querying or selecting resources.
