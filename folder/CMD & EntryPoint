@@ -1,0 +1,77 @@
+● Bot CMD and ENTRYPOINT are used to specify the command that will be executed when a container is run
+
+CMD
+● CMD specifies the default command and/or arguments to be executed when a container is started,
+  but it can be overridden when the container is run.
+
+# Override CMD
+docker run my-image new-command new-args
+
+● You can have multiple CMD instructions in a Dockerfile, but only the last one will be effective.
+  Previous CMD instructions are ignored.
+
+ENTRYPOINT
+● ENTRYPOINT specifies the main command that will be executed when a container is started.
+  It acts as the entry point for the container's process, and its arguments can be appended or
+  overridden when the contaner is run
+
+# Override ENTRYPOINT
+docker run my-image new-entrypoint new-args
+
+● You can have multiple ENTRYPOINT istructions in a Dockerfile, but only the last one will be effective.
+  Previous CMD istructions are ignored.
+
+● You can use both CMD and ENTRYPOINt in a Dockerfile, and their behavior will depend on how they are
+  used together. When used together, the CMD instruction provides default arguments to the ENTRYPOINT command.
+  The CMD values will be appended to the ENTRYPOINT command unless overriden at runtime
+
+FROM ubuntu:24.04
+ENTRYPOINT ["echo", "hello"]
+CMD ["world"]
+
+CMD & ENTRYPOINT in CLI
+● In Docker, you can use the --entrypoint option with the docker run command to override the default entry point
+  specified in a Docker image. This allows you to run a container with a different command as its entry point.
+
+docker run --entrypoint <new-entrypoint> <image-name> <new-command> [args...]
+<new-entrypoint>: The new entry point you want to use for the container.
+<image-name>: The name or ID of Docker image.
+<new-command>: The command to be executed as the new entry point.
+[args...]: Optional arguments to pass to the new command.
+
+Kubernetes configuration file
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-ubuntu
+spec:
+  containers:
+  - name: my-ubuntu
+    image: kaltz/ubuntu:24.04
+    command: ["echo"] # ENTRYPOINT
+    args: ["Hello, Kubernetes!"] # CMD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
