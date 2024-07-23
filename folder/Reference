@@ -1,0 +1,15 @@
+● A reference is a just another name for the same the variable
+
+Example:
+int main()
+{
+  int a = 10;
+  int &r = a;  - syntax of reference
+  cout << a;
+  r++;
+  cout<<r;
+  cout<<a;
+}
+
+● This is use for parameter passing
+● For writing small functions we use reference
