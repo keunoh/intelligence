@@ -1,0 +1,20 @@
+CPU 
+
+------------------------------
+                          Heap
+
+------------------------------
+                         Stack
+
+------------------------------
+                  Code Section
+
+------------------------------
+
+● Stack is orgarnized section
+● Heap is unorgarnized section
+
+New operation is going to create on Heap memory
+
+Physical DataStructure is array & Linked list
+Logical DataStructure is Stack, Queue, Tree and so on.
