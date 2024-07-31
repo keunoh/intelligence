@@ -1,0 +1,19 @@
+● Array ADT (Abstract Data Type)
+● The representation of data is define by complier itself, However the operations on the data
+  must be given by the program. The combination of theses 2 on an array is called Array ADT
+● Some possible operations on array are :
+Display()
+Add(x)/Append(x)
+Insert(index,x)
+Delete(index)
+Search(x)
+Get(indeX)
+Set(index,x)
+Max()/Min()
+Reverse()
+Shift()/Rotate()
+
+● The representation of array data require 3 things
+1. Array Space
+2. Size
+3. Length(no.of elements)
