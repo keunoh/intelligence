@@ -11,7 +11,7 @@ int main()
   int *p;            - declaration
   p = &a;            - Assginment / Initialisation
   printf("%d", a);  
-  printf("%d", *p;   - dereferencing
+  printf("%d", *p);   - dereferencing
 }
 
 ● Accessing Heap memory through pointer
@@ -21,4 +21,12 @@ int main()
 {
   int *p;
   p = new int[5];
+    -> make a variable on heap momory and give an address to p
 }
+
+Why?
+1. Accessing Heap Memory
+2. Accessing Resources 
+  -> like files, keyboard, monitor an so on.
+3. Parameter Passing
+
