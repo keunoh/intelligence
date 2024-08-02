@@ -30,3 +30,7 @@ Why?
   -> like files, keyboard, monitor an so on.
 3. Parameter Passing
 
+● Every pointers have a same size
+int *p1;
+char *p2;
+struct Rectangle *p3;
