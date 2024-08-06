@@ -12,4 +12,5 @@ for(int i = 0; i < cnt; i++) {
 			// 마지막 데이터
 			pfmStrCpy(my_stlm_date, stlm_date);
 		}
+	}
 }
