@@ -1,0 +1,15 @@
+1. order by stlm_date asc
+
+for(int i = 0; i < cnt; i++) {
+	if(pfmDateCmp(stlm_date, cur_date) >= 0) {
+		// 결제일자가 오늘이거나 미래
+		pfmStrCpy(my_stlm_date, stlm_date);
+		break;
+	}
+	else {
+		// 결제일자가 과거
+		if(i+1 == cnt) {
+			// 마지막 데이터
+			pfmStrCpy(my_stlm_date, stlm_date);
+		}
+}
