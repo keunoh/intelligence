@@ -1,4 +1,3 @@
 # TIL
 
-뭐
-wtf
+1. nmap
