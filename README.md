@@ -11,3 +11,4 @@
 9. conda
 10. mamba
 11. segmath
+12. NSE(Nmap Scripting Engine)
