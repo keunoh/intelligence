@@ -10,3 +10,4 @@
 8. wdutil
 9. conda
 10. mamba
+11. segmath
