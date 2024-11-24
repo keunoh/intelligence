@@ -17,3 +17,4 @@
 15. tor
 16. DNS
 17. nslookup
+18. proxychains
