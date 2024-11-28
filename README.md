@@ -26,3 +26,7 @@
   - find <directory> -user <username> 2>/dev/null
   - find /home -user john -group admins
   - find /home -user john -group admins -type f -size +10M 2>/dev/null
+  - echo QWxhZGRpbjpvcGVuIHNlc2FtZQ== | base64 --decode
+  - echo "Your secret message" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
+20. Rot13
+21. Base64
