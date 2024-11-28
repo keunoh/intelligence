@@ -18,3 +18,11 @@
 16. DNS
 17. nslookup
 18. proxychains
+19. terminal
+  - cat example.bin | strings | grep '^=*'
+  - cat <file> | grep --binary-files=without-match '^=*'
+  - cat example.txt | sort | uniq -u
+  - find <directory> -user <username> -group <groupname>
+  - find <directory> -user <username> 2>/dev/null
+  - find /home -user john -group admins
+  - find /home -user john -group admins -type f -size +10M 2>/dev/null
