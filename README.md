@@ -33,5 +33,6 @@
 22. React [ Time Traveling ]
 23. ALU
 24. computation
-25, uni
-2
+25. uni
+26. x86
+6. 
