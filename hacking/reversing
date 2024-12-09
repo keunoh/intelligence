@@ -1,0 +1,5 @@
+컴파일과정(C언어)
+  1. 전처리(Preprocess)
+  2. 컴파일(Compile)
+  3. 어셈블(Assemble)
+  4. 링크(Link)
