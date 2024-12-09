@@ -38,3 +38,5 @@
 27. openSSL 
 28. buffer overflow
 29. interpreter
+30. assemble
+31. disassemble
