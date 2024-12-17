@@ -46,3 +46,4 @@
 35. Protocols
 36. XOR
 37. OSINT
+38. stack
