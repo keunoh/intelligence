@@ -56,3 +56,4 @@
 45. gzip
 46. tar
 47. bzip2
+48. nc
