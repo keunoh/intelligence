@@ -53,3 +53,6 @@
 42. stream
 43. pointer
 44. socks5
+45. gzip
+46. tar
+47. bzip2
