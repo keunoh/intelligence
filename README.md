@@ -58,3 +58,4 @@
 47. bzip2
 48. nc
 49. file transfer
+50. Public key authentication
