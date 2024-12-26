@@ -61,3 +61,4 @@
 50. Public key authentication
 51. "RSA" (Rivest-Shamir-Adleman)
 52. "DSA" ("Digital Signature Algorithm")
+53. s_client
