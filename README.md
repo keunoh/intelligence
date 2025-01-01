@@ -74,3 +74,4 @@
 63. NS
 64. PTR
 65. CNAME
+66. bitmap
