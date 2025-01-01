@@ -68,3 +68,9 @@
 57. 443
 58. llm
 59. Instruction set architecture
+60. SOA
+61. SMTP
+62. > MX
+63. NS
+64. PTR
+65. CNAME
