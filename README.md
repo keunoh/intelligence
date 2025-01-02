@@ -51,7 +51,7 @@
 40. I/O
 41. fopen
 42. stream
-43. pointer
+43. pointer x2
 44. socks5
 45. gzip
 46. tar
