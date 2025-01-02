@@ -75,3 +75,5 @@
 64. PTR
 65. CNAME
 66. bitmap
+67. POP3
+68. IMAP
