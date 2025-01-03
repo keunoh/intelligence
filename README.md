@@ -36,7 +36,7 @@
 25. uni
 26. x86
 27. openSSL 
-28. buffer overflow
+28. buffer overflow x2
 29. interpreter
 30. assemble
 31. disassemble
