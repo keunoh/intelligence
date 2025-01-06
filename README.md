@@ -79,3 +79,5 @@
 68. IMAP
 69. application binary interface
 70. HTML
+71. offset
+72. Duff's device
