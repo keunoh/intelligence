@@ -35,8 +35,8 @@
     - useEffect
     - useMemo
     - useReducer
-    - React Server Components
-      - <Suspense>
+    - Built-in React Components
+      - Suspense
 23. ALU
 24. computation
 25. uni
