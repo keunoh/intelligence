@@ -6,7 +6,7 @@
 4. register
 5. cpu  x2
 6. transistor
-7. binary
+7. binary  x2
 8. wdutil
 9. conda
 10. mamba
