@@ -32,6 +32,7 @@
 21. Base64
 22. React [ Time Traveling ]
     - useCallback
+    - useEffect
 23. ALU
 24. computation
 25. uni
