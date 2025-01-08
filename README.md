@@ -33,6 +33,7 @@
 22. React [ Time Traveling ]
     - useCallback
     - useEffect
+    - useMemo
 23. ALU
 24. computation
 25. uni
