@@ -31,6 +31,7 @@
 20. Rot13
 21. Base64
 22. React [ Time Traveling ]
+    - useCallback
 23. ALU
 24. computation
 25. uni
