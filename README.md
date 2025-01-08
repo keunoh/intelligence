@@ -37,6 +37,7 @@
     - useReducer
     - Built-in React Components
       - Suspense
+      - StrictMode
 23. ALU
 24. computation
 25. uni
