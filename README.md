@@ -34,6 +34,7 @@
     - useCallback
     - useEffect
     - useMemo
+    - useReducer
 23. ALU
 24. computation
 25. uni
