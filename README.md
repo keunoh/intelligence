@@ -38,7 +38,7 @@
 27. openSSL 
 28. buffer overflow x2
 29. interpreter
-30. assemble
+30. assembly  x2
 31. disassemble
 32. Session Initiation Protocol (SIP)
 33. Portable Operating System Interface (POSIX)
