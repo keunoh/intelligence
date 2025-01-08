@@ -51,7 +51,7 @@
 33. Portable Operating System Interface (POSIX)
 34. CTF (Capture The Flag)
 35. Protocols
-36. XOR
+36. XOR(Exclusive or) x2
 37. OSINT
 38. stack
 39. macro
