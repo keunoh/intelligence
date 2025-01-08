@@ -35,6 +35,8 @@
     - useEffect
     - useMemo
     - useReducer
+    - React Server Components
+      - <Suspense>
 23. ALU
 24. computation
 25. uni
