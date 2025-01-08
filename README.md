@@ -4,7 +4,7 @@
 2. reverse engineering
 3. skimming, scanning, reading for detail
 4. register
-5. cpu
+5. cpu  x2
 6. transistor
 7. binary
 8. wdutil
