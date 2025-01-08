@@ -67,7 +67,7 @@
 56. elf
 57. 443
 58. llm
-59. Instruction set architecture
+59. Instruction set architecture  x2
 60. SOA
 61. SMTP
 62. > MX
