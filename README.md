@@ -90,3 +90,4 @@
 72. Duff's device
 73. segmentation fault
 74. file descriptor
+75. typescript
