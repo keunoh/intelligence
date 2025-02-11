@@ -94,3 +94,4 @@
 75. typescript
 76. thymeleaf
 77. async
+78. gsap
