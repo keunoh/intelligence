@@ -79,7 +79,7 @@
 60. SOA
 61. SMTP
 62. > MX
-63. NS
+63. NS 
 64. PTR
 65. CNAME
 66. bitmap
@@ -95,3 +95,4 @@
 76. thymeleaf
 77. async
 78. gsap
+79. OS Multi Thread
