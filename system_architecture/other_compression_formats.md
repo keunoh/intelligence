@@ -1,90 +1,90 @@
-# 📄 Other Compression/Archive Formats
+# 📄 다양한 압축/아카이브 포맷
 
-## 📌 Representative Archive Formats
+## 📌 대표적인 아카이브 형식
 
 ### 1. 7z (7-Zip)
-- **Development**: Created by Igor Pavlov, used in the 7-Zip program
-- **Compression Algorithm**: Primarily **LZMA**, LZMA2  
-  - Known for high compression ratio and speed
-- **Features**:
-  - **AES-256** encryption, **encrypt file names** supported
-  - Open-source (7-Zip library)
-  - Uses the `.7z` extension
+- **개발**: 이고르 파블로프(Igor Pavlov)가 만든 7-Zip 프로그램
+- **압축 알고리즘**: 기본적으로 **LZMA**, LZMA2
+  - 높은 압축률과 빠른 속도로 유명
+- **특징**:
+  - **AES-256** 암호화, **파일 이름 암호화** 지원
+  - 오픈소스 (7-Zip 라이브러리)
+  - `.7z` 확장자를 사용
 
 ### 2. RAR
-- **Development**: By Eugene Roshal
-- **Compression Algorithm**: Proprietary RAR algorithm (closed-source)
-- **Features**:
-  - **Multi-volume** split archives
-  - **Recovery record** (rebuild partially damaged archives)
-  - `.rar` extension, typically used with **WinRAR** (paid software, but widely used trial)
+- **개발**: 유진 로샬(Eugene Roshal)
+- **압축 알고리즘**: RAR 전용(독점) 알고리즘
+- **특징**:
+  - **분할 압축**(Multi-volume) 지원
+  - **복구 레코드** 기능 (파일 일부 손상 시 복원 가능)
+  - `.rar` 확장자, 주로 **WinRAR**(유료)로 사용
 
-### 3. TAR + GZIP (GNU/Linux world)
+### 3. TAR + GZIP (리눅스/GNU 계열)
 
 #### TAR
-- **Archive tool only**, no compression
-- `.tar` extension
-- Preserves **file attributes** (permissions, ownership), essential in Unix
+- **아카이브(묶기)만 담당**, 압축은 안 함
+- `.tar` 확장자
+- **파일 권한(퍼미션), 소유권 등** 메타데이터를 보존 – 유닉스 계열에서 필수
 
 #### GZIP
-- **Compression-only** (Deflate-based)
-- `.gz` extension
-- Often combined with TAR:
-  - `tar -czf file.tar.gz` => archive with TAR, then compress with GZIP
-  - Commonly `.tgz` or `.tar.gz`
+- **압축 전용** (Deflate 변형 알고리즘 사용)
+- `.gz` 확장자
+- 보통 TAR와 결합:
+  - `tar -czf file.tar.gz` → TAR로 묶은 후 GZIP으로 압축
+  - `.tgz` / `.tar.gz` 형태로 자주 사용
 
 ### 4. TAR + BZIP2 / TAR + XZ
-- `tar + bzip2` => `.tar.bz2` or `.tbz2`
-  - **bzip2** uses block sorting + Huffman coding
-  - Slower than GZIP but often better compression
-- `tar + xz` => `.tar.xz` or `.txz`
-  - **xz** is LZMA2-based
-  - Similar to 7z features, adapted for Linux environment
+- `tar + bzip2` → `.tar.bz2` 또는 `.tbz2`
+  - **bzip2**는 블록 정렬 압축 + 허프만 코딩 사용
+  - GZIP보다 느리지만 더 좋은 압축률을 보일 때가 많음
+- `tar + xz` → `.tar.xz` 또는 `.txz`
+  - **xz**는 LZMA2 기반
+  - 리눅스 환경에 맞춰 7z 기술 일부 적용
 
-### 5. ZIPX (Extended ZIP)
-- A WinZip-extended format
-- Includes **additional algorithms** (LZMA, bzip2, PPMd, etc.)
-- May lose compatibility with traditional ZIP tools (requires latest WinZip)
-
----
-
-## 🧪 Comparison Table
-
-| Format | Major Algorithms  | Features                                 | Extension  |
-|--------|-------------------|------------------------------------------|------------|
-| **ZIP** | Deflate           | Universal compatibility, OS default      | `.zip`     |
-| **7z** | LZMA/LZMA2        | Free/open-source, high ratio, strong encryption | `.7z`  |
-| **RAR**| RAR (proprietary) | Multi-volume, recovery record            | `.rar`     |
-| **TAR**| -(no compression)| Archive only, keeps Unix permissions     | `.tar`     |
-| **GZIP**| Deflate variant   | Single-file compression, used with TAR   | `.gz`      |
-| **BZIP2**| Block sort + Huffman | Slower but often better compression | `.bz2`     |
-| **XZ** | LZMA2             | High ratio, slower than GZIP            | `.xz`      |
-| **ZIPX**| Extended (LZMA etc.) | WinZip-specific advanced ZIP format  | `.zipx`    |
+### 5. ZIPX (확장 ZIP)
+- WinZip에서 확장한 ZIP 포맷
+- **추가 알고리즘**(LZMA, bzip2, PPMd 등) 지원
+- 일반 ZIP 프로그램과 호환성이 떨어질 수 있음 (최신 WinZip 필요)
 
 ---
 
-## 🧪 Biological Analogy
+## 🧪 비교 표
 
-> Think of each compression format as a different **species**, each evolved for a particular environment:
+| 포맷 | 주요 알고리즘       | 특징                                | 확장자   |
+|------|----------------------|-------------------------------------|----------|
+| **ZIP** | Deflate            | 호환성 최고, 운영체제 기본 지원         | `.zip`   |
+| **7z**  | LZMA/LZMA2         | 무료/오픈소스, 높은 압축률, 강력 암호화 | `.7z`    |
+| **RAR** | RAR(독점)          | 분할 압축, 복구 레코드                | `.rar`   |
+| **TAR** | -(무압축)           | 아카이브 전용, 유닉스 퍼미션 보존        | `.tar`   |
+| **GZIP**| Deflate 변형       | 단일 파일 압축, TAR와 함께 사용       | `.gz`    |
+| **BZIP2**| 블록 정렬+허프만    | 느리지만 더 나은 압축 가능             | `.bz2`   |
+| **XZ**  | LZMA2             | 압축률 높지만 GZIP보다 느림           | `.xz`    |
+| **ZIPX**| 확장 (LZMA 등)      | WinZip 전용 고급 ZIP 형식              | `.zipx`  |
+
+---
+
+## 🧪 생물학적 비유
+
+> 여러 압축 포맷(종)은 각기 다른 환경에 맞춰 **진화**한 생물 종과 같아요.
 >
-> - Some prioritize **efficiency** (7z),
-> - Some focus on **compatibility** (ZIP),
-> - Some have **unique capabilities** (RAR with recovery records).
+> - 어떤 종은 **압축 효율**을 극대화(7z),
+> - 어떤 종은 **호환성**을 우선(ZIP),
+> - 어떤 종은 **독자 기술**(RAR)로 특화.
 >
-> They all share a common ancestor (archiving + compression) but diverged in their evolution.
+> 모두 기본 원리는 같지만(데이터 압축), 세부적으로 달리 발전했죠.
 
 ---
 
-## 📝 Conclusion
+## 📝 결론
 
-1. **ZIP**: Most universal for sharing and standard OS support
-2. **7z**: High compression ratio, open-source
-3. **RAR**: Proprietary but extra features (recovery record, multi-volume)
-4. **TAR + GZIP/BZIP2/XZ**: Standard in Linux/Unix, preserves file permissions
-5. **ZIPX**: Extended ZIP, requires latest WinZip
+1. **ZIP**: 가장 범용적 (공유, 호환)
+2. **7z**: 높은 압축률, 오픈소스
+3. **RAR**: 독점 알고리즘, 분할/복구 기능
+4. **TAR + GZIP/BZIP2/XZ**: 리눅스/유닉스 표준, 파일 권한 유지
+5. **ZIPX**: 확장 ZIP, 최신 WinZip 필요
 
-Choose based on your **use case**:
-- **General sharing**: ZIP
-- **Max compression**: 7z or RAR
-- **Linux environment**: TAR plus GZIP/BZIP2/XZ
+**용도에 따라 선택**하면 됨:
+- **일반 공유/배포**: ZIP
+- **최대 압축률**: 7z 또는 RAR
+- **리눅스 환경**: TAR + (GZIP/BZIP2/XZ)
 
