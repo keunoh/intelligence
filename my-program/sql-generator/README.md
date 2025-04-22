@@ -133,7 +133,7 @@ Enter column names (comma-separated): USER_ID, USER_NAME, EMAIL
 ```sql
 UPDATE /* com.myApp.homepage.business.mapper.FileMapper.updateFile */
     SY_USER /* tableName */
-      SET
+        SET
               USER_ID   = #{userId}
             , USER_NAME = #{userName}
             , EMAIL     = #{email}
