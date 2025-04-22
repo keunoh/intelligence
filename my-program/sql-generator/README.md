@@ -7,7 +7,7 @@ SQL Generator는 테이블명과 컬럼명을 입력하면 MyBatis 형식으로
 
 ## 📥 다운로드
 
-- [sql_generator.zip 다운로드](https://github.com/keunoh/intelligence/releases/download/v2.0.0/sql_generator.zip)
+- [sql_generator.zip 다운로드](https://github.com/keunoh/intelligence/releases/download/v2.1.0/sql_generator.zip)
 
 압축을 풀면 `sql_generator.exe` 파일이 생성됩니다.
 
@@ -17,7 +17,7 @@ SQL Generator는 테이블명과 컬럼명을 입력하면 MyBatis 형식으로
 
 ### 1. exe 파일 실행 방법
 
-1. [다운로드 링크](https://github.com/keunoh/intelligence/releases/download/v2.0.0/sql_generator.zip)에서 zip 파일을 다운로드합니다.
+1. [다운로드 링크](https://github.com/keunoh/intelligence/releases/download/v2.1.0/sql_generator.zip)에서 zip 파일을 다운로드합니다.
 2. 압축을 해제합니다.
 3. `sql_generator.exe` 파일을 더블 클릭하거나, `cmd` 창에서 실행합니다.
 
@@ -174,4 +174,9 @@ DELETE /* com.myApp.homepage.business.mapper.FileMapper.deleteFile */
 
 간단한 SQL 자동화가 필요할 때  
 **가볍게 실행하고 빠르게 SQL을 생성하세요!**
+
+### [Release Note v2.1.0] 자동 복사 기능 안내
+
+- SQL 생성 후, 결과가 자동으로 클립보드에 복사됩니다.
+- 별도의 복사 조작 없이, Ctrl + V로 바로 붙여넣을 수 있습니다.
 
