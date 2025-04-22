@@ -1,3 +1,5 @@
+import pyperclip
+
 def to_camel_case(snake_str):
     parts = snake_str.lower().split('_')
     return parts[0] + ''.join(word.capitalize() for word in parts[1:])
@@ -87,7 +89,11 @@ if __name__ == "__main__":
         print("Generated SQL")
         print("=" * 80)
         print(result)
+        # ✨ 클립보드 자동 복사 추가
+        pyperclip.copy(result)
+        print("\n ✅ SQL has been copied to your clipboard!")
         print("=" * 80 + "\n")
+        
 
         cont = input("Do you want to generate another SQL? (y/n): ")
         if cont.lower() != 'y':
