@@ -1,6 +1,6 @@
 # SQL Generator
 
-SQL Generator는 테이블명과 컬럼명을 입력하면
+SQL Generator는 테이블명과 컬럼명을 입력하면 MyBatis 형식으로
 `INSERT`, `SELECT`, `UPDATE`, `DELETE` 문을 자동으로 생성해주는 작은 유틸리티입니다.
 
 ---
