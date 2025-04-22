@@ -55,6 +55,9 @@ affi_seq, column_name, user_id
 - **찾기 모드:** 정규 표현식 (Regex) 활성화
 - "모두 바꾸기" 클릭
 
+다음과 같은 화면에서 설정한다:
+![Image](https://github.com/user-attachments/assets/6b7ae20f-5f51-4a7f-8fba-98c6d597a7aa)
+
 변환 결과:
 ```text
 affiSeq, columnName, userId
@@ -75,9 +78,6 @@ affiSeq, columnName, userId
 - **찾기 모드:** 정규 표현식 (Regex)
 - "모두 바꾸기" 클릭
 
-다음과 같은 화면에서 설정한다:
-
-![Notepad++ 정규식 바꾸기 설정](attachment://file-UPhBBu9SydfU3czg5ZzuXL)
 
 변환 결과:
 ```text
