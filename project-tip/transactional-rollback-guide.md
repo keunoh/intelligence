@@ -70,6 +70,31 @@ public class MyService {
 
 - 해결: `inner()`를 다른 Bean으로 분리하거나, 프록시 구조를 명확히 활용해야 함
 
+```
+@Service
+public class MyService {
+    @Autowired
+    private InnerService innerService;
+
+    @Transactional
+    public void outer() {
+        innerService.inner(); // ✅ 프록시 통해 호출되므로 트랜잭션 적용됨
+    }
+}
+
+@Service
+public class InnerService {
+    @Transactional
+    public void inner() {
+        throw new BizException(...); // ✅ 롤백됨
+    }
+}
+
+```
+
+- ✔ 가장 확실하고 단순한 방법
+- ✔ 프록시를 통과하므로 @Transactional 적용됨
+  
 ---
 
 ### 2. readOnly = true 옵션 주의
