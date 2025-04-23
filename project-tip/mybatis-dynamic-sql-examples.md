@@ -121,5 +121,24 @@ FROM TASK t
 
 ---
 
+## 8. 동적 BETWEEN 처리
+
+```xml
+<if test="startDate != null and endDate != null">
+  AND CREATED_AT BETWEEN #{startDate} AND #{endDate}
+</if>
+<if test="startDate != null and endDate == null">
+  AND CREATED_AT >= #{startDate}
+</if>
+<if test="startDate == null and endDate != null">
+  AND CREATED_AT <= #{endDate}
+</if>
+
+```
+
+👉검색 조건에 따라 범위를 유연하게 처리
+✅ 날짜 조건 필터에서 매우 자주 사용됨
+
+---
 이러한 동적 SQL 조립 방식은 MyBatis에서 **조건부 쿼리, 업데이트, 정렬, 페이징, 다중 선택, 동적 조인**을 유연하게 처리할 수 있게 해준다.
 
