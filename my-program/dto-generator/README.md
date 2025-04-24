@@ -52,7 +52,7 @@ WHERE C.TABLE_SCHEMA = 'dbo'              -- 스키마 이름
 python dto_generator.py
 
 # 또는 exe 실행 (Windows)
-generate_vo.exe
+sql_generator.exe
 ```
 
 ## 3. 복사한 결과 붙여넣기
