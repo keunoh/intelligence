@@ -1,4 +1,4 @@
-# sql_generator 사용 가이드
+# dto_generator 사용 가이드
 
 Java VO(예: PVO/RVO) 클래스를 자동 생성하는 간단한 CLI 도구 사용법을 안내합니다.
 
@@ -52,7 +52,7 @@ WHERE C.TABLE_SCHEMA = 'dbo'              -- 스키마 이름
 python dto_generator.py
 
 # 또는 exe 실행 (Windows)
-sql_generator.exe
+dto_generator.exe
 ```
 
 ## 3. 복사한 결과 붙여넣기
