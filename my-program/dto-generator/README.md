@@ -4,6 +4,13 @@ Java VO(예: PVO/RVO) 클래스를 자동 생성하는 간단한 CLI 도구 사�
 
 ---
 
+## 📥 다운로드
+
+- [dto_generator.zip 다운로드](https://github.com/keunoh/intelligence/releases/download/v2.2.1/dto_generator.zip)
+
+압축을 풀면 `sql_generator.exe` 파일이 생성됩니다.
+---
+
 ## 1. 사전 작업: MSSQL에서 컬럼 정보 조회
 
 먼저 아래 SQL 쿼리를 실행하여 테이블의 컬럼명, 데이터 타입, 설명(Description)을 조회합니다.
