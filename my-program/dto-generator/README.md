@@ -6,7 +6,7 @@ Java VO(예: PVO/RVO) 클래스를 자동 생성하는 간단한 CLI 도구 사�
 
 ## 📥 다운로드
 
-- [dto_generator.zip 다운로드](https://github.com/keunoh/intelligence/releases/download/v2.2.1/dto_generator.zip)
+- [dto_generator.zip 다운로드](https://github.com/keunoh/intelligence/releases/download/v2.1.1/dto_generator.zip)
 
 압축을 풀면 `sql_generator.exe` 파일이 생성됩니다.
 ---
